@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar-fixed {
+    @apply fixed z-[40] bg-red-400;
+}
+
+.slider .slide {
+    clip-path: circle(0% at 0 50%);
+}
+
+.slider .slide.active {
+    clip-path: circle(150% at 0 50%);
+    transition: 1s;
+}
+
+.indikator .slide-icon.active {
+    background: #e11d48;
+}
+
+.range-input input {
+    background: none;
+}
